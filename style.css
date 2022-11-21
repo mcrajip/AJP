@@ -169,7 +169,7 @@ p {
     height: 60px;
     background: url(images/accent2.svg);
     position: absolute;
-    z-index: 5;
+    z-index: -1;
     left: -20px;
     top: -10px;
 }
@@ -231,7 +231,7 @@ p {
     height: 60px;
     background: url(images/accent1.svg);
     position: absolute;
-    z-index: 10;
+    z-index: -1;
     left: -20px;
     top: -10px;
 
@@ -348,9 +348,15 @@ footer p {
 
  @media only screen and (max-width: 992px) {
     #header, #footer {
+        
         padding: 16px 32px;
     }
-    
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
     section {
         padding: 64px 32px;
